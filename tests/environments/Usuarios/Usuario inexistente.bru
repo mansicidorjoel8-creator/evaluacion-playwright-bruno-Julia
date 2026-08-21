@@ -1,0 +1,9 @@
+get {
+  url: {{baseUrl}}/users/9999
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 404
+}
